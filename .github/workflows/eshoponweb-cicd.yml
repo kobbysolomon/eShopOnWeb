@@ -75,7 +75,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      # Deploy Azure WebApp using Bicep file
+      # Deploy Azure WebApp using Bicep file. Quota adjusted
       - name: deploy
         uses: azure/arm-deploy@v2
         with:
